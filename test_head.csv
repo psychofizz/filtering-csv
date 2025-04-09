@@ -1,0 +1,10 @@
+metric_name,timestamp,metric_value,check,error,error_code,expected_response,group,method,name,proto,scenario,service,status,subproto,tls_version,url,extra_tags,metadata
+http_reqs,1744085233,1.000000,,,,true,,GET,http://40.69.163.167:8000/,HTTP/1.1,default,,200,,,http://40.69.163.167:8000/,,
+http_req_duration,1744085233,65.058591,,,,true,,GET,http://40.69.163.167:8000/,HTTP/1.1,default,,200,,,http://40.69.163.167:8000/,,
+http_req_blocked,1744085233,2.550523,,,,true,,GET,http://40.69.163.167:8000/,HTTP/1.1,default,,200,,,http://40.69.163.167:8000/,,
+http_req_connecting,1744085233,2.502523,,,,true,,GET,http://40.69.163.167:8000/,HTTP/1.1,default,,200,,,http://40.69.163.167:8000/,,
+http_req_tls_handshaking,1744085233,0.000000,,,,true,,GET,http://40.69.163.167:8000/,HTTP/1.1,default,,200,,,http://40.69.163.167:8000/,,
+http_req_sending,1744085233,0.110501,,,,true,,GET,http://40.69.163.167:8000/,HTTP/1.1,default,,200,,,http://40.69.163.167:8000/,,
+http_req_waiting,1744085233,54.031794,,,,true,,GET,http://40.69.163.167:8000/,HTTP/1.1,default,,200,,,http://40.69.163.167:8000/,,
+http_req_receiving,1744085233,10.916296,,,,true,,GET,http://40.69.163.167:8000/,HTTP/1.1,default,,200,,,http://40.69.163.167:8000/,,
+http_req_failed,1744085233,0.000000,,,,true,,GET,http://40.69.163.167:8000/,HTTP/1.1,default,,200,,,http://40.69.163.167:8000/,,
