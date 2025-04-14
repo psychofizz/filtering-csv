@@ -166,7 +166,7 @@ def process_http_metrics(input_file, output_file, max_workers=4):
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        ## print("Uso: python script.py archivo_entrada.csv archivo_salida.csv")
+        print("Uso: python threaded_main.py archivo_entrada.csv archivo_salida.csv")
         sys.exit(1)
 
     input_file = sys.argv[1]

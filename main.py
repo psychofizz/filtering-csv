@@ -48,7 +48,7 @@ def process_http_metrics(input_file, output_file):
         for x in range (csv_data.shape[0]):
             ## to skip things that arent http metrics
             if not re.match(r'^http_', csv_data.iloc[x]['metric_name']):
-                print ("Skipping non-http metric")
+                ## print ("Skipping non-http metric")
                 continue
                 
             row_counter = x % 9          
@@ -73,8 +73,8 @@ def process_http_metrics(input_file, output_file):
 
             if row_counter == 0 and x != 0:
                 metrics.id = iteration
-                print("")
-                print(metrics)
+                ## print("")
+                ## print(metrics)
                 iteration = iteration + 1
                 save_data(metrics, output_file=output_file)
                 
@@ -128,7 +128,7 @@ def save_data(metrics, output_file):
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Uso: python script.py archivo_entrada.csv archivo_salida.csv")
+        print("Uso: python main.py archivo_entrada.csv archivo_salida.csv")
         sys.exit(1)
     
     input_file = sys.argv[1]
