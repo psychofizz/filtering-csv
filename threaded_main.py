@@ -92,8 +92,8 @@ def process_chunk(chunk_data, chunk_id, output_file):
                 metrics.http_req_waiting is not None,
                 metrics.http_req_receiving is not None
             ]):
-                print(f"\nProcessed ID {chunk_id}")
-                print(metrics)
+                ##print(f"\nProcessed ID {chunk_id}")
+                ##print(metrics)
                 
                 with write_lock:
                     save_data(metrics, output_file)
@@ -166,7 +166,7 @@ def process_http_metrics(input_file, output_file, max_workers=4):
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Uso: python script.py archivo_entrada.csv archivo_salida.csv")
+        ## print("Uso: python script.py archivo_entrada.csv archivo_salida.csv")
         sys.exit(1)
 
     input_file = sys.argv[1]
